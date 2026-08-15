@@ -3,7 +3,7 @@ const formData = {
   message: '',
 };
 
-const form = document.querySelector('.feedback-form');
+let form = document.querySelector('.feedback-form');
 
 form.addEventListener('input', onFormInput);
 
@@ -18,7 +18,8 @@ function onFormInput(event) {
 const savedSettings = localStorage.getItem('feedback-form-state');
 if (savedSettings) {
   const parsedData = JSON.parse(savedSettings);
-  formData = parsedData;
+  formData.email = parsedData.email || '';
+  formData.message = parsedData.message || '';
 
   form.elements.email.value = parsedData.email;
   form.elements.message.value = parsedData.message;

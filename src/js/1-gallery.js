@@ -75,9 +75,9 @@ const galleryMarkup = images
   <li class="gallery_item">
 	<a class="gallery_link" href=${original}>
 		<img
-		  class="gallery_image" 
+		  class="gallery-image" 
 		  src=${preview} 
-		  alt=${description}
+		  alt="${description}"
 		/>
 	</a>
 </li>
@@ -88,6 +88,6 @@ const galleryMarkup = images
 galleryContainer.insertAdjacentHTML('beforeend', galleryMarkup);
 
 const lightbox = new SimpleLightbox('.gallery_link', {
-  captionData: 'alt',
-  captionDelay: 250,
+  captionsData: 'alt',
+  captionsDelay: 250,
 });
