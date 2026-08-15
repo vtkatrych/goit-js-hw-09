@@ -1,9 +1,9 @@
-const formData = {
+let formData = {
   email: '',
   message: '',
 };
 
-let form = document.querySelector('.feedback-form');
+const form = document.querySelector('.feedback-form');
 
 form.addEventListener('input', onFormInput);
 
