@@ -2,11 +2,11 @@ import"./assets/modulepreload-polyfill-B5Qt9EMX.js";/* empty css                
   <li class="gallery_item">
 	<a class="gallery_link" href=${o}>
 		<img
-		  class="gallery_image" 
+		  class="gallery-image" 
 		  src=${p} 
-		  alt=${a}
+		  alt="${a}"
 		/>
 	</a>
 </li>
-`).join("");e.insertAdjacentHTML("beforeend",n);new i(".gallery_link",{captionData:"alt",captionDelay:250});
+`).join("");e.insertAdjacentHTML("beforeend",n);new i(".gallery_link",{captionsData:"alt",captionsDelay:250});
 //# sourceMappingURL=1-gallery.js.map
